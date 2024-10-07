@@ -1,17 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Wellcome to 2D Animation Team
 ---
-##### Header trước xem
-Test thử xem
+##### [[Hướng dẫn sử dụng]]
 
-2 Enter bình thường.
-
-Dấu chấm rồi  2enter
-#### enter rồi header
-Enter bình thường.
-
-Hai lần Enter
-
-Hai lần Enter bình thường
-1. gõ theo dạng số thứ tự
-2. enter bình thương

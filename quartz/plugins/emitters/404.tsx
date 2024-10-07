@@ -20,13 +20,13 @@ export const NotFoundPage: QuartzEmitterPlugin = () => {
     right: [],
   }
 
-  const { head: Head, pageBody, footer: Footer } = opts
+  const { head: Head, pageBody } = opts // Bỏ Footer
   const Body = BodyConstructor()
 
   return {
     name: "404Page",
     getQuartzComponents() {
-      return [Head, Body, pageBody, Footer]
+      return [Head, Body, pageBody] // Không trả về Footer
     },
     async getDependencyGraph(_ctx, _content, _resources) {
       return new DepGraph<FilePath>()

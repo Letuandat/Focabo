@@ -1,0 +1,32 @@
+import ...
+
+SOFTWARE_NAME = "Ref-View"
+AUTHOR = "Le Tuan Dat"
+VERSION = "1.0"
+
+# Function to get the correct path of the resources when bundled
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
+
+class abc:
+    
+    def __init__
+        self.root.iconbitmap(resource_path("Icon.ico"))  # Thay đổi biểu tượng cửa sổ chính
+    
+    def create_new_window(state=None, save_file_path=None):
+        new_root = tk.Toplevel()
+        new_window = ImageReferenceWindow(new_root, window_state=state, save_file_path=save_file_path) 
+        new_root.title(f"{SOFTWARE_NAME} v{VERSION} by {AUTHOR}")
+        new_root.iconbitmap(resource_path("Icon.ico"))  # Thay đổi biểu tượng cửa sổ tạo mới
+
+    def show_popup_window():    
+        popup.geometry("400x200")  # Đặt kích thước mặc định
+        popup.title(f"{SOFTWARE_NAME} v{VERSION} by {AUTHOR}")
+
+        popup.iconbitmap(resource_path("Ref-view.ico"))  # Thay đổi biểu tượng cửa sổ
