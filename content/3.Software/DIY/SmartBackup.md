@@ -1,0 +1,1 @@
+Là một phần mềm mình tự phát triển bằng chat GPT để thực hiện các nhiệm vụ backup theo nhu cầu
